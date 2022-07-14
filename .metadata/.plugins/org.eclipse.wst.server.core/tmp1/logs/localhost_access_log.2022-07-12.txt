@@ -1,6 +1,3 @@
-127.0.0.1 - - [12/Jul/2022:13:31:15 +0530] "GET / HTTP/1.1" 404 994
-0:0:0:0:0:0:0:1 - - [12/Jul/2022:13:31:16 +0530] "GET /Login_mvc_javaconfig/ HTTP/1.1" 200 304
-0:0:0:0:0:0:0:1 - - [12/Jul/2022:13:31:24 +0530] "GET /Login_mvc_javaconfig/log?username=jj&password=bn&gmail=bvb HTTP/1.1" 200 173
-127.0.0.1 - - [12/Jul/2022:13:41:41 +0530] "GET / HTTP/1.1" 404 994
-0:0:0:0:0:0:0:1 - - [12/Jul/2022:13:41:42 +0530] "GET /Login/ HTTP/1.1" 200 304
-0:0:0:0:0:0:0:1 - - [12/Jul/2022:13:41:49 +0530] "GET /Login/log?username=hbhj&password=bvnb&gmail=b+b HTTP/1.1" 200 173
+127.0.0.1 - - [12/Jul/2022:15:58:24 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [12/Jul/2022:15:58:26 +0530] "GET /Login_mvc_javaconfig/ HTTP/1.1" 200 304
+0:0:0:0:0:0:0:1 - - [12/Jul/2022:15:58:42 +0530] "GET /Login_mvc_javaconfig/log?username=pooja&password=poo%40123&gmail=hjgh HTTP/1.1" 200 173

@@ -9,3 +9,5 @@
 1657613263609	Rename resource 'simpleInt'
 1657613413471	Rename Java project 'Login_mvc_javaconfig'
 1657613866530	Rename resource 'spring-boot-jwt_security'
+1657799521998	Delete resource 'spring-boot-jwt_security_withoutdb'
+1657800251856	Delete resource 'spring-boot-jwt'

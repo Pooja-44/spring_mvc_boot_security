@@ -1253,3 +1253,1018 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2022-07-12 14:28:42.186
+!MESSAGE Error while getting URI 'platform:/plugin/org.eclipse.persistence.moxy/org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd' from plugin 'org.eclipse.jpt.common.eclipselink.core' : /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+!STACK 0
+java.io.FileNotFoundException: /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:115)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:240)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:37)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:263)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.createURI(XMLCatalogs.java:139)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.lambda$3(XMLCatalogs.java:87)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getWTPExtensionCatalog(XMLCatalogs.java:65)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getAllCatalogs(XMLCatalogs.java:52)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLPreferenceConstants.storePreferencesToLemminxOptions(XMLPreferenceConstants.java:90)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.mergeCustomInitializationOptions(XMLLanguageServer.java:169)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:164)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$7(LanguageServerWrapper.java:364)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SESSION 2022-07-12 15:51:36.642 -----------------------------------------------
+eclipse.buildId=4.24.0.I20220607-0700
+java.version=17.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-07-12 15:51:47.563
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-12 15:51:47.563
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@44b82007,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ae22651,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-12 15:51:47.563
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@464017f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c4231e5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-07-12 15:51:52.983
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\poojdn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2022-07-12 15:51:56.540
+!MESSAGE Error while getting URI 'platform:/plugin/org.eclipse.persistence.moxy/org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd' from plugin 'org.eclipse.jpt.common.eclipselink.core' : /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+!STACK 0
+java.io.FileNotFoundException: /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:115)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:240)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:37)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:263)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.createURI(XMLCatalogs.java:139)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.lambda$3(XMLCatalogs.java:87)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getWTPExtensionCatalog(XMLCatalogs.java:65)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getAllCatalogs(XMLCatalogs.java:52)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLPreferenceConstants.storePreferencesToLemminxOptions(XMLPreferenceConstants.java:90)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.mergeCustomInitializationOptions(XMLLanguageServer.java:169)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:164)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$7(LanguageServerWrapper.java:364)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.jdt.launching 4 150 2022-07-12 15:52:09.270
+!MESSAGE The archive: C:/apache-tomcat-7.0.47/bin/bootstrap.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2022-07-12 15:56:10.033
+!MESSAGE Port 8005 required by Tomcat v7.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2022-07-12 15:57:38.639
+!MESSAGE Port 8005 required by apache-tomcat-8.0.36 at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+!SESSION 2022-07-13 18:02:47.371 -----------------------------------------------
+eclipse.buildId=4.24.0.I20220607-0700
+java.version=17.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-07-13 18:02:59.750
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-13 18:02:59.750
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@30bd6bc8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c4697fc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-13 18:02:59.750
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@90b9695,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@e6fbf82,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:04.824
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:04.827
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@164d3869[org.springframework.tooling.boot.ls:1.36.0.202206171137(id=928)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:04.831
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:04.941
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-07-13 18:03:06.308
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\poojdn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.041
+!MESSAGE Boot LS startup time from start to initialized: 5199ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.242
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.TjyQWMqPisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.247
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.251
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.254
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.257
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.260
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.TjyQWMqP => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.271
+!MESSAGE classpath=82 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.277
+!MESSAGE buffering callback sts4.classpath.TjyQWMqP uservalidation_q4_springboot_mongodb false 82
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.281
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.328
+!MESSAGE classpath=14 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.332
+!MESSAGE buffering callback sts4.classpath.TjyQWMqP Login_mvc_javaconfig1 false 14
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.335
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.341
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.346
+!MESSAGE buffering callback sts4.classpath.TjyQWMqP emp_q5_springboot_crud_h2db false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.347
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.349
+!MESSAGE classpath=14 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.351
+!MESSAGE buffering callback sts4.classpath.TjyQWMqP helloWorld_mvc_xmlconfig2 false 14
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.357
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.365
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.371
+!MESSAGE buffering callback sts4.classpath.TjyQWMqP secureApp_springsecurity_bcrypt_postgres false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.374
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.379
+!MESSAGE classpath=14 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.382
+!MESSAGE buffering callback sts4.classpath.TjyQWMqP simpleIptr_mvc_xmlconfig false 14
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.385
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.389
+!MESSAGE classpath=46 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.395
+!MESSAGE buffering callback sts4.classpath.TjyQWMqP spring-boot-jwt_security_withoutdb false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:10.398
+!MESSAGE executing callback sts4.classpath.TjyQWMqP 7 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-13 18:03:11.379
+!MESSAGE executing callback sts4.classpath.TjyQWMqP SUCCESS [done]
+
+!ENTRY org.eclipse.jface 2 0 2022-07-13 18:03:21.847
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-13 18:03:21.847
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2c8e3d8a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14a7f2fd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2022-07-13 18:03:49.236
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-07-14 17:20:12.420 -----------------------------------------------
+eclipse.buildId=4.24.0.I20220607-0700
+java.version=17.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-07-14 17:20:24.227
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-14 17:20:24.227
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6cd8c373,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@449f9628,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-14 17:20:24.227
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@37806ccb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@606d2a92,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:26.880
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:26.883
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@31fd8e6f[org.springframework.tooling.boot.ls:1.36.0.202206171137(id=928)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:26.887
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:26.959
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.jface 2 0 2022-07-14 17:20:27.493
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-14 17:20:27.493
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53080ec0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@613c829c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-07-14 17:20:27.990
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\poojdn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:29.864
+!MESSAGE Boot LS startup time from start to initialized: 2954ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.035
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VFBDaMYEisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.042
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.049
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.050
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.052
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.053
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VFBDaMYE => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.061
+!MESSAGE classpath=82 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.065
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE uservalidation_q4_springboot_mongodb false 82
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.067
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.070
+!MESSAGE classpath=14 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.072
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE Login_mvc_javaconfig1 false 14
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.074
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.078
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.082
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE emp_q5_springboot_crud_h2db false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.084
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.085
+!MESSAGE classpath=14 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.087
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE helloWorld_mvc_xmlconfig2 false 14
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.088
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.092
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.096
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE secureApp_springsecurity_bcrypt_postgres false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.098
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.100
+!MESSAGE classpath=14 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.101
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE simpleIptr_mvc_xmlconfig false 14
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.102
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.104
+!MESSAGE classpath=46 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.105
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE spring-boot-jwt_security_withoutdb false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.107
+!MESSAGE executing callback sts4.classpath.VFBDaMYE 7 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:20:30.716
+!MESSAGE executing callback sts4.classpath.VFBDaMYE SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-07-14 17:21:08.712
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:21:11.890
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:21:11.893
+!MESSAGE classpath=46 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:21:11.897
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE spring-boot-jwt_security_withoutdb false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:21:11.899
+!MESSAGE executing callback sts4.classpath.VFBDaMYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:21:11.912
+!MESSAGE executing callback sts4.classpath.VFBDaMYE SUCCESS [done]
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2022-07-14 17:21:16.450
+!MESSAGE Error while getting URI 'platform:/plugin/org.eclipse.persistence.moxy/org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd' from plugin 'org.eclipse.jpt.common.eclipselink.core' : /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+!STACK 0
+java.io.FileNotFoundException: /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:115)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:240)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:37)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:263)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.createURI(XMLCatalogs.java:139)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.lambda$3(XMLCatalogs.java:87)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getWTPExtensionCatalog(XMLCatalogs.java:65)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getAllCatalogs(XMLCatalogs.java:52)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLPreferenceConstants.storePreferencesToLemminxOptions(XMLPreferenceConstants.java:90)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.mergeCustomInitializationOptions(XMLLanguageServer.java:169)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:164)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$7(LanguageServerWrapper.java:366)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:01.987
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:01.989
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE spring-boot-jwt_security_withoutdb true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:01.991
+!MESSAGE executing callback sts4.classpath.VFBDaMYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:01.996
+!MESSAGE executing callback sts4.classpath.VFBDaMYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:40.570
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:40.573
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:40.577
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE spring-boot-jwt false 47
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:40.579
+!MESSAGE executing callback sts4.classpath.VFBDaMYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:40.600
+!MESSAGE executing callback sts4.classpath.VFBDaMYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:40.838
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:40.841
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:40.845
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE spring-boot-jwt false 47
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:40.847
+!MESSAGE executing callback sts4.classpath.VFBDaMYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:40.869
+!MESSAGE executing callback sts4.classpath.VFBDaMYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:42.316
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:42.319
+!MESSAGE classpath=48 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:42.322
+!MESSAGE buffering callback sts4.classpath.VFBDaMYE spring-boot-jwt false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:42.325
+!MESSAGE executing callback sts4.classpath.VFBDaMYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:22:42.339
+!MESSAGE executing callback sts4.classpath.VFBDaMYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:27:59.184
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VFBDaMYE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:27:59.185
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.VFBDaMYE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:27:59.187
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:27:59.188
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VFBDaMYE => OK
+!SESSION 2022-07-14 17:29:19.956 -----------------------------------------------
+eclipse.buildId=4.24.0.I20220607-0700
+java.version=17.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 4 567 2022-07-14 17:29:27.784
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2022-07-14 17:29:27.784
+!MESSAGE Could not read metadata for 'spring-boot-jwt'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/spring-boot-jwt)[567]: java.lang.Exception: The project description file (.project) for 'spring-boot-jwt' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:895)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:875)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:731)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1587)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2547)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2252)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:525)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:264)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:499)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2022-07-14 17:29:27.785
+!MESSAGE The project description file (.project) for 'spring-boot-jwt' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'spring-boot-jwt' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:895)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:875)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:731)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1587)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2547)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2252)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:525)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:943)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:321)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:264)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:499)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jface 2 0 2022-07-14 17:29:29.439
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-14 17:29:29.439
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73b034ca,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@104e6540,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-14 17:29:29.439
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3f9ee527,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a41d17a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:31.418
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:31.421
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@29b23bc4[org.springframework.tooling.boot.ls:1.36.0.202206171137(id=928)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:31.425
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:31.498
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-07-14 17:29:32.093
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\poojdn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.262
+!MESSAGE Boot LS startup time from start to initialized: 3812ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.838
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.zBZTlqjFisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.843
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.848
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.851
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.854
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.856
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.zBZTlqjF => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.863
+!MESSAGE classpath=82 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.868
+!MESSAGE buffering callback sts4.classpath.zBZTlqjF uservalidation_q4_springboot_mongodb false 82
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.892
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.897
+!MESSAGE classpath=14 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.900
+!MESSAGE buffering callback sts4.classpath.zBZTlqjF Login_mvc_javaconfig1 false 14
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.903
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.909
+!MESSAGE classpath=92 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.917
+!MESSAGE buffering callback sts4.classpath.zBZTlqjF emp_q5_springboot_crud_h2db false 92
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.919
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.923
+!MESSAGE classpath=14 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.925
+!MESSAGE buffering callback sts4.classpath.zBZTlqjF helloWorld_mvc_xmlconfig2 false 14
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.928
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.935
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.940
+!MESSAGE buffering callback sts4.classpath.zBZTlqjF secureApp_springsecurity_bcrypt_postgres false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.944
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.947
+!MESSAGE classpath=14 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.950
+!MESSAGE buffering callback sts4.classpath.zBZTlqjF simpleIptr_mvc_xmlconfig false 14
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:35.952
+!MESSAGE executing callback sts4.classpath.zBZTlqjF 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:29:36.688
+!MESSAGE executing callback sts4.classpath.zBZTlqjF SUCCESS [done]
+
+!ENTRY org.eclipse.jface 2 0 2022-07-14 17:29:38.193
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-07-14 17:29:38.193
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53365a58,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3f2f5454,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.core.resources 4 567 2022-07-14 17:29:39.933
+!MESSAGE The project description file (.project) for 'spring-boot-jwt' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'spring-boot-jwt' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:895)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:770)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1064)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:39.970
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:39.972
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:39.976
+!MESSAGE buffering callback sts4.classpath.zBZTlqjF spring-boot-jwt false 47
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:39.978
+!MESSAGE executing callback sts4.classpath.zBZTlqjF 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:40.020
+!MESSAGE executing callback sts4.classpath.zBZTlqjF SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:40.573
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:40.576
+!MESSAGE classpath=47 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:40.581
+!MESSAGE buffering callback sts4.classpath.zBZTlqjF spring-boot-jwt false 47
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:40.583
+!MESSAGE executing callback sts4.classpath.zBZTlqjF 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:40.600
+!MESSAGE executing callback sts4.classpath.zBZTlqjF SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:42.334
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:42.338
+!MESSAGE classpath=48 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:42.341
+!MESSAGE buffering callback sts4.classpath.zBZTlqjF spring-boot-jwt false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:42.344
+!MESSAGE executing callback sts4.classpath.zBZTlqjF 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:34:42.359
+!MESSAGE executing callback sts4.classpath.zBZTlqjF SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-07-14 17:34:46.701
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:35:22.779
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:35:22.782
+!MESSAGE classpath=46 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:35:22.786
+!MESSAGE buffering callback sts4.classpath.zBZTlqjF spring-boot-jwt false 46
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:35:22.792
+!MESSAGE executing callback sts4.classpath.zBZTlqjF 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-14 17:35:22.807
+!MESSAGE executing callback sts4.classpath.zBZTlqjF SUCCESS [done]
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2022-07-14 17:35:41.591
+!MESSAGE Error while getting URI 'platform:/plugin/org.eclipse.persistence.moxy/org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd' from plugin 'org.eclipse.jpt.common.eclipselink.core' : /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+!STACK 0
+java.io.FileNotFoundException: /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:115)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:240)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:37)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:263)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.createURI(XMLCatalogs.java:139)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.lambda$3(XMLCatalogs.java:87)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getWTPExtensionCatalog(XMLCatalogs.java:65)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getAllCatalogs(XMLCatalogs.java:52)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLPreferenceConstants.storePreferencesToLemminxOptions(XMLPreferenceConstants.java:90)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.mergeCustomInitializationOptions(XMLLanguageServer.java:169)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:164)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$7(LanguageServerWrapper.java:366)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)

@@ -7,6 +7,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\poojdn\Downloads\spring-boot-jwt"/>
 			<item value="C:\Users\poojdn\Documents\simpleIntrest4"/>
 			<item value="C:\Users\poojdn\Documents\Login"/>
 			<item value="C:\Users\poojdn\Desktop\spring_Mvc_boot_security"/>
@@ -14,5 +15,8 @@
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item key="OUTSIDE_LOCATION" value="C:\Users\poojdn\Desktop\spring_Mvc_boot_security"/>
 	</section>
 </section>

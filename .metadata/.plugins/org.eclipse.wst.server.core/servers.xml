@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers2/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0 (2)" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="6">
-    <list key="modules" value0="helloWorld_mvc_xmlconfig2::org.eclipse.jst.j2ee.server:helloWorld_mvc_xmlconfig2::jst.web::2.3" value1="simpleIptr_mvc_xmlconfig::org.eclipse.jst.j2ee.server:simpleIptr_mvc_xmlconfig::jst.web::2.3"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers2/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0 (3)" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="helloWorld_mvc_xmlconfig2::org.eclipse.jst.j2ee.server:helloWorld_mvc_xmlconfig2::jst.web::2.3"/>
   </server>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers2/apache-tomcat-8.0.36 at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="apache-tomcat-8.0.36 at localhost" name="apache-tomcat-8.0.36 at localhost" runtime-id="apache-tomcat-8.0.36" server-type="org.eclipse.jst.server.tomcat.80" server-type-id="org.eclipse.jst.server.tomcat.80" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
-    <list key="modules" value0="Login_mvc_javaconfig::org.eclipse.jst.jee.server:Login_mvc_javaconfig::jst.web::3.1" value1="Login_mvc_javaconfig1::org.eclipse.jst.jee.server:Login_mvc_javaconfig1::jst.web::3.1"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers2/apache-tomcat-8.0.36 at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="apache-tomcat-8.0.36 at localhost" name="apache-tomcat-8.0.36 at localhost" runtime-id="Apache Tomcat v8.0 (2)" server-type="org.eclipse.jst.server.tomcat.80" server-type-id="org.eclipse.jst.server.tomcat.80" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="Login_mvc_javaconfig1::org.eclipse.jst.jee.server:Login_mvc_javaconfig1::jst.web::3.1"/>
   </server>
 </servers>
